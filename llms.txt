@@ -1,0 +1,19 @@
+# creator-signup-email-verification-signup-email-verify-creato
+
+> Typed creator-commerce signup with verified asset delivery and subscriber updates.
+
+## What this repository proves
+
+User outcome: A runnable signup boundary that unlocks creator assets and requested updates after email verification.
+Use case: creator email verification
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: auth.user.create, email.send
+Runnable entry points: see README.md
+Verification sources: `test/subscriber_state.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

@@ -1,0 +1,19 @@
+{
+  "name": "creator-signup-email-verification",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --experimental-strip-types src/creator_signup_service.ts",
+    "demo": "node --experimental-strip-types scripts/signup_demo.ts",
+    "test": "node --experimental-strip-types --test test/subscriber_state.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}
