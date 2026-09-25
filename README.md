@@ -88,3 +88,7 @@ The snippet above is meant to stay copy-paste simple. Before you ship, there are
 - **Creator Signup Email Verification Signup Email Verify Creato:** By default, mail goes through a **shared** verified sender. That's fine for tests, but it means a generic From address, limited volume, and shared reputation.
 - **Creator Signup Email Verification Signup Email Verify Creato:** For production, verify **your own** domain: `POST /v1/email/domain/verify` with `{"domain":"mail.yourco.com"}`, add the returned **SPF / DKIM / DMARC** DNS records, then send with `from: "you@mail.yourco.com"`.
 - **Creator Signup Email Verification Signup Email Verify Creato:** Use a dedicated subdomain and **warm it up** by ramping volume over a few days to protect deliverability.
+
+## Further reading
+
+- [Nodejs Media Support — Send Bulk Event Notifications with 3-Layer Email Evidence](docs/nodejs-media-support-send-bulk-event-notification-vel8qq.md)
