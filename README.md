@@ -88,3 +88,7 @@ The snippet above stays copy-paste simple. Before you ship, a few **required** s
 - **Creator Signup Email Verification Signup Email Verify Creato:** By default mail goes through a **shared** verified sender — fine for tests, but generic From + limited volume + shared reputation.
 - **Creator Signup Email Verification Signup Email Verify Creato:** For production, verify **your own** domain: `POST /v1/email/domain/verify` with `{"domain":"mail.yourco.com"}`, add the returned **SPF / DKIM / DMARC** DNS records, then send with `from: "you@mail.yourco.com"`.
 - **Creator Signup Email Verification Signup Email Verify Creato:** Use a dedicated subdomain and **warm it up** (ramp volume over days) to protect deliverability.
+
+## Further reading
+
+- [Resend, SendGrid, or Postmark Transactional Email Alternative — 2026 API-Only Guide](docs/resend-sendgrid-or-postmark-transactional-email-a-143qp5.md)
